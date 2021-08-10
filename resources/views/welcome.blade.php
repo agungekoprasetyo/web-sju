@@ -50,13 +50,13 @@
                     <div class="col-md-12">
                         <div class="de-flex">
                             <div class="de-flex-col">
-                            <h2 style="color: white;">JELAS</h2>
+                                <h2 style="color: white;">JELAS</h2>
                                 <!-- logo begin -->
                                 <div id="logo">
-                                    <a href="index.html">
-                                        <img alt="" class="logo" src="images/logo-light.png" />
-                                        <img alt="" class="logo-2" src="images/logo.png" />
-                                    </a>
+                                    <!-- <a href="{{url ('/')}}">
+                                        <img alt="" class="logo" src="assets/images/Picture2.png" />
+                                        <img alt="" class="logo-2" src="assets/images/Picture2.png" />
+                                    </a> -->
                                 </div>
 
                                 <!-- logo close -->
@@ -65,30 +65,36 @@
                                 <!-- mainmenu begin -->
                                 <ul id="mainmenu">
                                     <li>
-                                        <a href="index.html">Produk<span></span></a>
+                                        <a href="{{url ('/produk')}}">Produk<span></span></a>
                                     </li>
                                     <li>
-                                        <a href="#">Klaim Produk<span></span></a>
+                                        <a href="{{url ('/klaimproduk')}}">Klaim Produk<span></span></a>
                                     </li>
                                     <li>
-                                        <a href="#">Artikel<span></span></a>
+                                        <a href="{{url ('/artikel')}}">Artikel<span></span></a>
                                     </li>
                                     <li>
-                                        <a href="#">Tentang Kami<span></span></a>
+                                        <a href="{{url ('/tentangkami')}}">Tentang Kami<span></span></a>
                                     </li>
                                     <li>
-                                        <a href="#">FAQ<span></span></a>
+                                        <a href="{{url ('/faq')}}">FAQ<span></span></a>
                                     </li>
                                     <li>
+                                        <a href="{{route ('login')}}">Login<span></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="{{route ('register')}}">Daftar<span></span></a>
+                                    </li>
+                                    <!-- <li>
                                         <div class="col-md-4 text-right">
-                                            <a href="#" class="btn-primary">Login</a>
+                                            <a href="{{route ('login')}}" class="btn-primary">Login</a>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="col-md-4 text-right">
-                                            <a href="#" class="btn-primary">Daftar</a>
+                                            <a href="{{route ('register')}}" class="btn-primary">Daftar</a>
                                         </div>
-                                    </li>
+                                    </li> -->
 
                                 </ul>
                             </div>
@@ -153,7 +159,7 @@
                             <div class="f-box f-border f-icon-left f-icon-circle">
                                 <i class="icofont-motor-bike bg-color text-light"></i>
                                 <div class="fb-text">
-                                    <h4>Asuransi Motor</h4>
+                                    <h4><a href="{{url ('asuransimotor')}}">Asuransi Motor</a></h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                                 </div>
                             </div>
@@ -163,7 +169,7 @@
                             <div class="f-box f-border f-icon-left f-icon-circle">
                                 <i class="icofont-briefcase bg-color text-light"></i>
                                 <div class="fb-text">
-                                    <h4>Surrety Bond</h4>
+                                    <h4><a href="{{url ('asuransijaminan')}}">Surrety Bond</a></h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                                 </div>
                             </div>
@@ -173,7 +179,7 @@
                             <div class="f-box f-border f-icon-left f-icon-circle">
                                 <i class="icofont-heart-beat bg-color text-light"></i>
                                 <div class="fb-text">
-                                    <h4>Personal Accident</h4>
+                                    <h4><a href="{{url ('asuransikecelakaan')}}">Personal Accident</a></h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                                 </div>
                             </div>
@@ -183,7 +189,7 @@
                             <div class="f-box f-border f-icon-left f-icon-circle">
                                 <i class="icofont-hospital bg-color text-light"></i>
                                 <div class="fb-text">
-                                    <h4>Asuransi Kesehatan</h4>
+                                    <h4><a href="{{url ('asuransikesehatan')}}">Asuransi Kesehatan</a></h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                                 </div>
                             </div>
@@ -193,7 +199,7 @@
                             <div class="f-box f-border f-icon-left f-icon-circle">
                                 <i class="icofont-home bg-color text-light"></i>
                                 <div class="fb-text">
-                                    <h4>Asuransi Rumah</h4>
+                                    <h4><a href="{{url ('asuransirumah')}}">Asuransi Rumah</a></h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                                 </div>
                             </div>
@@ -208,7 +214,9 @@
 
             <section data-bgcolor="white">
                 <br>
-
+                <br>
+                <br>
+                <br>
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-5 offset-lg-7">
@@ -216,26 +224,22 @@
                                 Kenapa Harus Memilih
                                 <p style="color: red;"> JELAS?</p>
                             </h2>
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Online Payment</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Quick Claims</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">14-day Guarantee</a>
-                                </li>
-                            </ul>
-                            <div class="tab-content" id="pills-tabContent">
-                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                                    <p>Consequat occaecat ullamco amet non eiusmod nostrud dolore irure incididunt est duis anim sunt officia. Fugiat velit proident aliquip nisi incididunt nostrud exercitation proident est nisi. Irure magna elit commodo anim ex veniam culpa eiusmod id nostrud sit cupidatat in veniam ad. Eiusmod consequat eu adipisicing minim anim aliquip cupidatat culpa excepteur quis. Occaecat sit eu exercitation irure Lorem incididunt nostrud.</p>
+                            <div class="">
+                                <div class="f-box f-border f-icon-left f-icon-circle">
+                                    <i class="icofont-holding-hands bg-color text-light"></i>
+                                    <div class="fb-text">
+                                        <h4>Superior Service</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                    </div>
                                 </div>
-                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                                    <p>Ad pariatur nostrud pariatur exercitation ipsum ipsum culpa mollit commodo mollit ex. Aute sunt incididunt amet commodo est sint nisi deserunt pariatur do. Aliquip ex eiusmod voluptate exercitation cillum id incididunt elit sunt. Qui minim sit magna Lorem id et dolore velit Lorem amet exercitation duis deserunt. Anim id labore elit adipisicing ut in id occaecat pariatur ut ullamco ea tempor duis.</p>
-                                </div>
-                                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                                    <p>Est quis nulla laborum officia ad nisi ex nostrud culpa Lorem excepteur aliquip dolor aliqua irure ex. Nulla ut duis ipsum nisi elit fugiat commodo sunt reprehenderit laborum veniam eu veniam. Eiusmod minim exercitation fugiat irure ex labore incididunt do fugiat commodo aliquip sit id deserunt reprehenderit aliquip nostrud. Amet ex cupidatat excepteur aute veniam incididunt mollit cupidatat esse irure officia elit do ipsum ullamco Lorem.</p>
+                            </div>
+                            <div class="">
+                                <div class="f-box f-border f-icon-left f-icon-circle">
+                                    <i class="icofont-dollar bg-color text-light"></i>
+                                    <div class="fb-text">
+                                        <h4>Competitive Pricing</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -245,6 +249,8 @@
                 <div class="image-container col-md-6 pull-right" data-bgimage="url(assets/images/ask.jpg) center"></div>
                 <br>
                 <br>
+                <br>
+
 
             </section>
 
@@ -376,10 +382,9 @@
                 </div>
             </div>
 
-    </div>
 
-    </footer>
-    <!-- footer close -->
+        </footer>
+        <!-- footer close -->
 
 
     </div>
