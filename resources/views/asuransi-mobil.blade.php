@@ -1,6 +1,8 @@
 @extends('layouts.app1')
 
 @section('custom-css')
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 
 
 @endsection
@@ -24,6 +26,7 @@ Asuransi Mobil
     </div>
 </section>
 <!-- section close -->
+
 
 <section class="no-padding text-light" data-bgcolor="#2F3186">
     <div class="container-fluid">
@@ -74,6 +77,56 @@ Asuransi Mobil
         </div>
     </div>
 </section>
+<section id="section-fun-facts" class="pt60 pb60" data-bgcolor="#F2F6FE">
+    <div class="container">
+        <p style="text-align: center;font-size:160%;"><b>Asuransi Mobil Terbaik 2021, Bandingkan Polis!</b></p>
+        <br>
+        <br>
+        <div class="row">
+            <div class="form-group col-md-3">
+                <label for="inputState">Merek</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>Honda</option>
+                    <option>Daihatsu</option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-3">
+                <label for="inputState">Model</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>Accord</option>
+                    <option>Brio</option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-3">
+                <label for="inputState">Tipe</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>Brio RS MT</option>
+                    <option>Brio RS CVT</option>
+
+                </select>
+            </div>
+
+            <div class="form-group col-md-3">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-3 button-primary" style="align-items: center;">
+                <a href="#" class="btn-custom capsule med">Cari Asuransi</a>
+
+            </div>
+        </div>
+
+    </div>
+</section>
 
 <section>
     <div class="container">
@@ -115,38 +168,7 @@ Asuransi Mobil
 </section>
 
 
-
-<section id="section-about-us-2" class="no-padding text-light" data-bgcolor="#595A9E">
-    <div class="image-container col-md-6 pull-left" data-bgimage="url(assets/images/background/11.jpg) center"></div>
-
-    <div class="container">
-        <div class="row">
-            <div class="inner-padding">
-                <div class="col-md-6 offset-md-7" data-animation="fadeInRight" data-delay="200">
-                    <h2>
-                        Plan for the future<br>and live your life now
-                    </h2>
-                    <div class="small-border sm-left"></div>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="clearfix"></div>
-
-</section>
-
-<section class="bg-color text-light">
+<section class="bg-color-secondary text-light">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -170,53 +192,7 @@ Asuransi Mobil
     </div>
 </section>
 
-<section id="section-fun-facts" class="pt60 pb60" data-bgcolor="#F2F6FE">
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-lg-2 col-md-3 wow fadeInUp mb-sm-30" data-wow-delay="0s">
-                <div class="de_count">
-                    <h3><span class="timer" data-to="4500" data-speed="3000">0</span></h3>
-                    <h5 class="id-color">Home Protected</h5>
-                </div>
-            </div>
 
-            <div class="col-lg-2 col-md-3 wow fadeInUp mb-sm-30" data-wow-delay=".25s">
-                <div class="de_count">
-                    <h3><span class="timer" data-to="16" data-speed="3000">0</span>k</h3>
-                    <h5 class="id-color">People Saved</h5>
-                </div>
-            </div>
-
-            <div class="col-lg-2 col-md-3 wow fadeInUp mb-sm-30" data-wow-delay=".4s">
-                <div class="de_count">
-                    <h3><span class="timer" data-to="4" data-speed="3000">0</span>m</h3>
-                    <h5 class="id-color">Money Saved</h5>
-                </div>
-            </div>
-
-            <div class="col-lg-2 col-md-3 wow fadeInUp mb-sm-30" data-wow-delay=".6s">
-                <div class="de_count">
-                    <h3><span class="timer" data-to="52" data-speed="3000">0</span>k</h3>
-                    <h5 class="id-color">Contract Signed</h5>
-                </div>
-            </div>
-
-            <div class="col-lg-2 col-md-3 wow fadeInUp mb-sm-30" data-wow-delay=".8s">
-                <div class="de_count">
-                    <h3><span class="timer" data-to="100" data-speed="3000">0</span>+</h3>
-                    <h5 class="id-color">Countries</h5>
-                </div>
-            </div>
-
-            <div class="col-lg-2 col-md-3 wow fadeInUp mb-sm-30" data-wow-delay="1s">
-                <div class="de_count">
-                    <h3><span class="timer" data-to="2" data-speed="3000">2</span>k</h3>
-                    <h5 class="id-color">Staff Member</h5>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 @endsection
 
